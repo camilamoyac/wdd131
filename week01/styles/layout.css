@@ -1,0 +1,74 @@
+* {
+	margin: 0.5rem;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+
+body {
+    margin-left: 2rem;
+    display: grid;
+    height: 90vh;
+    grid-template: auto 1fr auto / auto 2fr 1fr;
+}
+
+header {
+    padding: 1rem;
+    grid-column: 1 / 4;
+}
+
+h1, h2, h3{
+    font-weight: 900;
+}
+
+p, a{
+    font-weight: 500;
+    font-size: large;
+}
+  
+main {
+    grid-column: 2 / 3;
+    padding: 1rem;
+}
+  
+.sidebar {
+    grid-column: 3 / 4;
+    padding: 1rem;
+    background-color: #C2948A;
+}
+  
+footer {
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
+    background-color: #7ea8be;
+}
+
+nav {
+	margin: 0 auto 2rem;
+	max-width: 90vw;
+    background-color: #28536b;
+}
+
+.navigation {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.navigation li {
+	flex: 1 1 auto;
+}
+
+.navigation a {
+	display: block;
+	color: white;
+	padding: 0.75rem;
+	text-decoration: none;
+	text-align: center;
+}
+
+.navigation a:hover {
+	font-weight: 700;
+}
