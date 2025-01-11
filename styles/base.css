@@ -1,0 +1,130 @@
+* {
+	margin: 1rem;
+	padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: "Roboto", serif;
+}
+
+h1, h2, h3{
+    font-weight: 900;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+}
+
+p, a{
+    font-size: larger;
+    text-decoration: none;
+}
+
+header{
+    padding-top: 1rem;
+    background-color: #28536b;
+}
+
+h1{
+    color: white;
+}
+
+main{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 2fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    margin: 0; 
+    padding: 1rem; 
+    outline: 2px solid #28536b;
+    border-radius: 5px;
+}
+
+h2{
+    color: white;
+    background-color: #28536b;
+    padding: 10px;
+    margin: 0;
+}
+  
+.mainbar {
+    grid-column: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.text-img{
+    display: flex;
+    align-items: flex-start;
+}
+
+.text-img p{
+    flex: 1;
+}
+
+h3{
+    border-bottom: 2px solid #28536b;
+    padding: 1rem;
+}
+
+figcaption{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+  
+.sidebar {
+    grid-column: 2;
+    padding: 0;
+    margin: 0;
+    background-color: #C2948A;
+}
+
+.sidebar ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 85%;
+}
+  
+footer {
+    padding: 2rem;
+    text-align: center;
+    background-color: #7ea8be;
+}
+
+#currentyear{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+	margin: 0 auto 1rem;
+    background-color: #7ea8be;
+}
+
+.navigation {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.navigation li {
+	flex: 1 1 auto;
+}
+
+.navigation a {
+	display: block;
+	text-align: center;
+}
+
+.navigation a:hover {
+	background-color: #28536b;
+    color: white;
+}
+
+.sidebar a:hover{
+    background-color: #E1CFCB;
+}
