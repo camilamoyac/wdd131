@@ -2,7 +2,7 @@ const input = document.querySelector("#favchap");
 const button = document.querySelector("button");  //add chapter
 const list = document.querySelector("#list");  //list of scriptures
 
-button.addEventListener("click", function(){
+function addChapter(){
     if (input.value.trim() === ""){
         alert("Please enter a value.");
         input.focus();
@@ -25,5 +25,12 @@ button.addEventListener("click", function(){
         input.value = "";
         input.focus();
     }
-});
+};
 
+button.addEventListener("click", addChapter);
+
+input.addEventListener("keydown", function(event){
+    if (event.key === "Enter"){
+        addChapter();
+    }
+});
