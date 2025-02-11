@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    background-color: #f7eaf5;
+}
+
+img {
+    margin: 1rem auto;
+    display: block;
+    background: black;
+    animation: fade 10s;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+footer {
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 2rem;
+    text-align: center;
+    background-color: #f7eaf5;
+}
+
+#currentyear {
+    margin: 0;
+    padding: 0;
+}
