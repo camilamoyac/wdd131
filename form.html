@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Product Review Form by Camila Moya for WDD 131 - Dynamic Web Fundamentals.">
+    <meta name="author" content="Camila Sol Moya Casanova">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital@0;1&display=swap"
+        rel="stylesheet">
+
+    <script src="scripts/form.js" defer></script>
+
+    <title>WDD 131 - Product Review Form - Camila Moya</title>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+            <label>Product Name *
+                <select id="product" name="productName" required>
+                    <option value="" disabled selected>Select a product... ▼</option>
+                    <!-- products added dinamically -->
+                </select>
+            </label>
+
+            <label>Overall Rating *
+                <div class="stars">
+                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                </div>
+            </label>
+
+            <label>Date of Installation *<input type="date" id="date" name="installDate" required></label>
+
+            <label>Useful Features (optional) </label>
+            <label><input type="checkbox" id="durability" name="durability" value="yes">Durability </label>
+            <label><input type="checkbox" id="ease" name="ease" value="yes">Ease of use </label>
+            <label><input type="checkbox" id="performance" name="performance" value="yes">Performance </label>
+            <label><input type="checkbox" id="design" name="design" value="yes">Design </label>
+
+            <label for="review">Written Review (optional)
+                <textarea id="review" name="review" placeholder="Great product for easy cleaning..."></textarea>
+            </label>
+
+            <label>Your Name (optional) <input type="text" id="name" name="name"></label>
+
+            <input type="submit" value="Post Review">
+
+            <p>The fields marked with (*) are required.</p>
+        </form>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> ☀ Camila Sol Moya Casanova ☀ Chile</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+
+</html>
