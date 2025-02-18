@@ -96,39 +96,39 @@ const temples = [
 	}
     ];
 
-	function createTempleCard(filteredTemples) {
-		const container = document.querySelector(".card-grid");
-		container.innerHTML = "";
+function createTempleCard(filteredTemples) {
+	const container = document.querySelector(".card-grid");
+	container.innerHTML = "";
 	
-		filteredTemples.forEach(temple => {
-			let card = document.createElement("section");
-			let photo = document.createElement("img");
-			let name = document.createElement("h3");
-			let location = document.createElement("p");
-			let dedication = document.createElement("p");
-			let area = document.createElement("p");
+	filteredTemples.forEach(temple => {
+		let card = document.createElement("section");
+		let photo = document.createElement("img");
+		let name = document.createElement("h3");
+		let location = document.createElement("p");
+		let dedication = document.createElement("p");
+		let area = document.createElement("p");
 	
-			name.textContent = temple.templeName;
-			location.innerHTML = `<span>Location:</span> ${temple.location}`;
-			dedication.innerHTML = `<span>Dedication:</span> ${temple.dedicated}`;
-			area.innerHTML = `<span>Size:</span> ${temple.area} sq ft`;
+		name.textContent = temple.templeName;
+		location.innerHTML = `<span>Location:</span> ${temple.location}`;
+		dedication.innerHTML = `<span>Dedication:</span> ${temple.dedicated}`;
+		area.innerHTML = `<span>Size:</span> ${temple.area} sq ft`;
 	
-			photo.setAttribute("src", temple.imageUrl);
-			photo.setAttribute("alt", `Beautiful photo of ${temple.templeName} temple.`);
-			photo.setAttribute("width", "350");
-			photo.setAttribute("height", "200");
-			photo.setAttribute("loading", "lazy");
-			photo.setAttribute("referrerpolicy", "no-referrer");
+		photo.setAttribute("src", temple.imageUrl);
+		photo.setAttribute("alt", `Beautiful photo of ${temple.templeName} temple.`);
+		photo.setAttribute("width", "350");
+		photo.setAttribute("height", "200");
+		photo.setAttribute("loading", "lazy");
+		photo.setAttribute("referrerpolicy", "no-referrer");
 	
-			card.appendChild(photo);
-			card.appendChild(name);
-			card.appendChild(location);
-			card.appendChild(dedication);
-			card.appendChild(area);
+		card.appendChild(photo);
+		card.appendChild(name);
+		card.appendChild(location);
+		card.appendChild(dedication);
+		card.appendChild(area);
 	
-			container.appendChild(card);
-		});
-	}
+		container.appendChild(card);
+	});
+}
 
 createTempleCard(temples);
 
