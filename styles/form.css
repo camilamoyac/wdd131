@@ -1,0 +1,122 @@
+* {
+	margin: 1rem;
+	padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: "Roboto", serif;
+}
+
+body{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 1rem;
+    background-color: #28536b;
+}
+
+h1{
+    font-weight: 900;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    color: white;
+}
+
+main{
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #dee4e8;
+    border: 1px solid #28536b;
+}
+
+label{
+    font-size: larger;
+    text-decoration: none;
+    display: block;
+    padding-top: 1rem;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea{
+    background-color: white;
+    display: block;
+    border: 1px solid #28536b;
+    border-radius: 3px;
+    padding: .65rem;
+    color: rgb(72, 72, 72);
+    width: 100%;
+    max-width: 90%;
+    appearance: none;
+    font-size: 0.9rem;
+}
+
+textarea{
+    height: 200px;
+}
+
+input[type="checkbox"]{
+    margin-right: 8px;
+}
+
+input[type="submit"]{
+    background-color: #28536b;
+    color: white;
+    border-radius: 6px;
+    padding: .7rem;
+    width: 85%;
+    max-width: 90%;
+    margin: 1rem 0 2rem 7%;
+    box-shadow: 1px 1px 4px gray;
+    font-size: larger;
+}
+
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: black;
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+.stars > label {
+	color: black;
+	width: 30px;
+	height: 30px;
+	font-size: 2.5rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: black;
+}
+
+.stars > label:hover {
+	color: #ba7c00;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "⭐";
+    font-size: 1.6rem;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: #7ea8be;
+}
+
+#currentyear{
+    margin: 0;
+    padding: 0;
+}
