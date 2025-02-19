@@ -128,8 +128,8 @@ p{
     min-height: 630px;
 }
 
-/* welcome message */
-.welcome{
+/* welcome and confirmation message */
+.paragraph{
     border: 1px solid var(--primary);
     background-color: var(--accent);
     color: var(--background);
@@ -137,19 +137,128 @@ p{
     margin: 1rem 10px 2rem 10px;
 }
 
-.welcome p{
-    padding-left: 9%;
+.paragraph p, .list a{
+    margin-left: 10%;
     text-align: left;
     font-weight: bold;
     font-size: 1.5rem;
 }
 
+/* confirmation page links */
+.list a{
+    text-decoration: none;
+}
 
-.review{
+.list a:hover{
+    background-color: var(--background);
+    color: var(--accent);
+}
+
+/* form */
+form{
+    background-color: var(--primary);
+    border: var(--small-border);
+    margin: 2rem auto;
+    width: 390px;
+    padding: 1rem;
+}
+
+form label, form p{
+    text-align: left;
+    font-size: 1.25rem;
+    text-decoration: none;
+    display: block;
+    padding: 0 1rem 1rem 1rem;
+}
+
+fieldset{
+    color: var(--font);
+    border-color: var(--font);
+    width: 355px;
+    margin: 0 auto;
+}
+
+form legend{
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+/* inputs */
+form input[type="radio"]{
+    display: inline-block;
+    margin-right: 8px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="url"],
+form textarea{
+    background-color: var(--font);
+    display: block;
+    border-radius: 3px;
+    padding: 1rem;
+    color: var(--background);
+    width: 100%;
+    appearance: none;
+    font-size: 1.25rem;
     font-family: "Newsreader", serif;
     background-color: var(--font);
     color: var(--background);
-    padding: 0.5rem;
+    margin: 0 auto;
+}
+
+form textarea{
+    height: 350px;
+}
+
+form input[type="submit"]{
+    background-color: var(--accent);
+    color: var(--background);
+    border-radius: 6px;
+    padding: .7rem;
+    width: 85%;
+    max-width: 90%;
+    margin: 1rem 0 2rem 7%;
+    font-size: 1.5rem;
+}
+
+
+/* stars */
+.stars input[type="radio"] {
+	display: none;
+	position: relative;
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+    padding-bottom: 1rem;
+}
+
+.stars > label {
+	color: var(--font);
+	width: 50px;
+	height: 50px;
+	font-size: 3rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+}
+
+.stars > label:hover {
+	color: #e0ac00;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "⭐";
+    font-size: 2.2rem;
 }
   
 img {

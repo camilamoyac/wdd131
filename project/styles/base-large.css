@@ -60,7 +60,22 @@
     }
 
     /* welcome message */
-    .welcome{
+    .paragraph{
         max-width: 100%;
     }
+
+    /* form */
+    form{
+        width: 700px;
+    }
+
+    fieldset{
+        width: 600px;
+    }
+
+    form textarea{
+        height: 250px;
+    }
+
+    
 }
