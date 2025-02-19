@@ -45,14 +45,14 @@
                     <label><input type="radio" id="movie" name="item" required>Movie</label>
 
                 <label>Title *
-                    <input type="text" id="titleInput" placeholder="Start typing a movie or book title..." required>
+                    <input type="text" id="titleInput" name="title" placeholder="Start typing a movie or book title..." required>
                     <ul id="suggestions" style="list-style-type: none; display: none;"></ul>
                 </label>
 
                 <label>Author/Director (optional) <input type="text" id="creator" name="creator"></label>
 
                 <label>Book cover or movie poster *
-                    <input type="url" id="imgUrl" placeholder="Enter an image url..." required>
+                    <input type="url" id="imgUrl" name="url" placeholder="Enter an image url..." required>
                 </label>
             </fieldset>
             <fieldset>
@@ -71,6 +71,7 @@
                 </label>
 
                 <label>Date watched/finished reading *<input type="date" id="date" name="Date" required></label>
+                
                 <label>Your Name * <input type="text" id="name" name="name" required></label>
             </fieldset>
             <input type="submit" value="Post Review">
