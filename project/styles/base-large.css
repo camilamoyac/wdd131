@@ -52,6 +52,7 @@
     /* main */
     main{
         max-width: 1200px;
+        min-height: 1800px;
     }
 
     /* card containers */
@@ -77,5 +78,5 @@
         height: 250px;
     }
 
-    
+
 }
