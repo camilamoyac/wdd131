@@ -1,0 +1,66 @@
+@media screen and (min-width: 500px){
+    /* header */
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo-container img {
+        width: 200;
+        margin-right: 10px;
+    }
+    
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: var(--primary);
+        font-weight: bold;
+        font-size: 1.35rem;
+    }
+    
+    nav ul li a:hover {
+        color: var(--font);
+        background-color: var(--primary);
+    }
+
+    h1 {
+        display: inline;
+        background-color: var(--font);
+        color: var(--primary);
+        text-align: left;
+        font-size: 2.5rem;
+    }
+
+    #hamburger {
+		display: none;
+	}
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+        width: auto;
+        list-style: none;
+    }
+
+    /* main */
+    main{
+        max-width: 1200px;
+    }
+
+    /* card containers */
+    .top-films, .top-books{
+    display: flex;
+    }
+
+    /* welcome message */
+    .welcome{
+        max-width: 100%;
+    }
+}

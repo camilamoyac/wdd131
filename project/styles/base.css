@@ -1,0 +1,173 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #442242;
+    --font: #FFF6DE;
+    --background: #1F1E20;
+    --accent: #E7B9C1;
+    --border-accent: 10px solid var(--accent);
+    --small-border: 1px solid var(--accent);
+}
+
+body {
+    background-color: var(--background);
+    color: var(--font);
+    font-family: 'News Cycle', sans-serif;
+    max-width: 100%;
+}
+
+/* header */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: var(--font);
+    color: var(--background);
+    border-bottom: var(--border-accent);
+}
+
+h1 {
+    display: none;
+}
+
+/* navigation */
+.navigation{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+	top: 3rem;
+	right: 0;
+    background-color: var(--font);
+    width: 100%;
+}
+
+.navigation.open{
+    display: flex;
+}
+
+nav a {
+	display: block;
+	text-align: center;
+    color: var(--primary);
+    padding: 1rem;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+}
+
+nav a:hover {
+	background-color: var(--primary);
+    color: var(--font);
+}
+
+/* hamburger button */
+#hamburger {
+	font-size: 1.5rem;
+	border: 0;
+    background: none;
+	color: var(--primary);
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#hamburger::before {
+	content: "☰";
+}
+
+#hamburger.open::before {
+	content: "✖";
+}
+
+/* main */
+main{
+    max-width: 500px;
+    margin: 0 auto;
+}
+  
+h2, h3, p{
+    text-align: center;
+}
+  
+h2{
+    border-bottom: 3px solid var(--accent);
+    padding-top: 2rem;
+    padding-bottom: 0.25rem;
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+  
+h3{
+    color: var(--font);
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin: 0 0.5rem;
+}
+  
+p{
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+/* card containers */
+.top-films, .top-books{
+    margin: 1rem auto;
+}
+
+/* cards */
+.card{
+    background-color: var(--primary);
+    width: 350px;
+    border: var(--small-border);
+    margin: 1rem auto;
+    min-height: 630px;
+}
+
+/* welcome message */
+.welcome{
+    border: 1px solid var(--primary);
+    background-color: var(--accent);
+    color: var(--background);
+    padding: 1rem 1rem 1rem 0;
+    margin: 1rem 10px 2rem 10px;
+}
+
+.welcome p{
+    padding-left: 9%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+.review{
+    font-family: "Newsreader", serif;
+    background-color: var(--font);
+    color: var(--background);
+    padding: 0.5rem;
+}
+  
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+
+}
+
+/* footer */
+footer{
+    border-top: var(--border-accent);
+    text-align: center;
+    background-color: var(--font);
+    padding: 1rem 0;
+}
+
+footer p{
+    font-weight: 700;
+    color: var(--primary);
+}
