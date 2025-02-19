@@ -1,5 +1,5 @@
 * {
-	margin: 1rem;
+	margin: 0.4rem 1rem;
 	padding: 0;
     box-sizing: border-box;
     color: black;
@@ -23,12 +23,18 @@ h1{
     color: white;
 }
 
+main p{
+    font-size: large;
+    padding: 1rem;
+}
+
 main{
     display: block;
     max-width: 400px;
     margin: 0 auto;
     background-color: #dee4e8;
     border: 1px solid #28536b;
+    min-height: 400px;
 }
 
 label{
@@ -38,6 +44,7 @@ label{
     padding-top: 1rem;
 }
 
+/* inputs */
 input[type="text"],
 input[type="date"],
 select,
@@ -60,6 +67,7 @@ textarea{
 
 input[type="checkbox"]{
     margin-right: 8px;
+    margin-top: 0;
 }
 
 input[type="submit"]{
@@ -74,6 +82,8 @@ input[type="submit"]{
     font-size: larger;
 }
 
+
+/* stars */
 input[type="radio"] {
 	display: none;
 	position: relative;
@@ -110,6 +120,7 @@ input[type="radio"] {
     font-size: 1.6rem;
 }
 
+/* footer */
 footer {
     padding: 1rem;
     text-align: center;

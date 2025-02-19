@@ -5,6 +5,7 @@ year.innerHTML = `${today.getFullYear()}`;
 const lastModified = document.querySelector("#lastmodified");
 lastModified.textContent = `Last modified: ${document.lastModified}`;
 
+// populating product select
 const products = [
     {
       id: "fc-1888",
@@ -32,4 +33,13 @@ const products = [
       averagerating: 5.0
     }
   ];
+
+const select = document.getElementById("prod");
+
+products.forEach(product => {
+    const option = document.createElement("option");
+    option.value = product.id;
+    option.textContent = product.name;
+    select.appendChild(option);
+})
 
