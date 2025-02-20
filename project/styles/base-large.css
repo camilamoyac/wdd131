@@ -57,7 +57,12 @@
 
     /* card containers */
     .top-films, .top-books{
-    display: flex;
+        display: flex;
+    }
+
+    .card-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     /* welcome message */
