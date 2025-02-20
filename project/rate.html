@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/base-large.css">
 
-    <script src="scripts/home.js" defer></script>
+    <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
@@ -36,13 +36,14 @@
     </header>
 
     <main>
-        <h2>Rate a book or movie</h2>
-        <form method="get" action="confirmation.html">
+        <button type="button" id="hamburger" aria-label="Open navigation menu"></button>
+        <h2>Rate a Book or Movie</h2>
+        <form id="reviewForm">
             <fieldset>
                 <legend>Media Details</legend>
                 <p>What are you rating? *</p>
-                    <label><input type="radio" id="book" name="item" required>Book</label>
-                    <label><input type="radio" id="movie" name="item" required>Movie</label>
+                    <label><input type="radio" id="book" name="item" value="book" required>Book</label>
+                    <label><input type="radio" id="movie" name="item" value="movie" required>Movie</label>
 
                 <label>Title *
                     <input type="text" id="titleInput" name="title" placeholder="Start typing a movie or book title..." required>
@@ -67,12 +68,12 @@
                     </div>
 
                 <label for="review">Written Review (optional)
-                    <textarea class="review" id="review" name="review" placeholder="I loved it! The plot was excellent..."></textarea>
+                    <textarea id="review" name="review" placeholder="I loved it! The plot was excellent..."></textarea>
                 </label>
 
-                <label>Date watched/finished reading *<input type="date" id="date" name="Date" required></label>
-                
-                <label>Your Name * <input type="text" id="name" name="name" required></label>
+                <label>Date watched/finished reading *<input type="date" id="logDate" name="logDate" required></label>
+
+                <label>Your Name * <input type="text" id="userName" name="userName" required></label>
             </fieldset>
             <input type="submit" value="Post Review">
             <p>The fields marked with (*) are required.</p>

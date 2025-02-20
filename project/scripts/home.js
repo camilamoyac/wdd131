@@ -15,7 +15,7 @@ hamButton.addEventListener('click', () => {
 	hamButton.classList.toggle('open');
 });
 
-// cards
+// film array
 const topFilms = [
     {
         name: "Dune: Part 2",
@@ -37,6 +37,7 @@ const topFilms = [
     },
 ]
 
+// book array
 const topBooks = [
     {
         name: "Just for the Summer",
@@ -58,6 +59,7 @@ const topBooks = [
     },
 ]
 
+// populate page
 function createMediaCard(topMediaArray, containerSelector){
     const container = document.querySelector(containerSelector);
 	container.innerHTML = "";
