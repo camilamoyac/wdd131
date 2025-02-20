@@ -1,0 +1,38 @@
+Here are some examples for the rate page so you don't have to come up with everything to put on the form
+Then look at the My Content page to see your review gallery.
+
+book
+Pride and Prejudice
+Jane Austen
+https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1681804503i/129915654.jpg
+pick any amount of stars
+I love this book, the best experience it's to read it without knowing anything about it!
+pick any date
+your name
+
+movie
+Dune
+Denis Villeneuve
+https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Dune_%282021_film%29.jpg/220px-Dune_%282021_film%29.jpg
+pick any amount of stars
+I love this movie, the best experience it's to watch it without knowing anything about it!
+pick any date
+your name
+
+book
+The Summer I Turned Pretty
+Jenny Han
+https://images.cdn1.buscalibre.com/fit-in/360x360/9b/be/9bbe97fcd951a9103cb089ccfe5656f2.jpg
+pick any amount of stars
+This is the perfect book to read at the beach! Can't wait to read the rest of the series.
+pick any date
+any name
+
+movie
+your favorite movie
+director of movie or omit it
+look up a poster
+pick any amount of stars
+write a review or leave it empty
+pick any date
+any name
