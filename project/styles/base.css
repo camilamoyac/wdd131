@@ -270,6 +270,7 @@ img {
 
 }
 
+/* review cards */
 .card div{
     background-color: var(--font);
     color: var(--background);
@@ -279,7 +280,7 @@ img {
     padding: 0.5rem;
 }
 
-.block p, .rev h4{
+.block p, .block h4{
     padding-bottom: 1rem;
     text-align: left;
 }

@@ -68,7 +68,7 @@ function displayReviews() {
 		card.appendChild(title);
 		card.appendChild(creator);
         card.appendChild(reviewBlock);
-        card.setAttribute("class", "card rev");
+        card.setAttribute("class", "card");
 	
 		container.appendChild(card);
     });
